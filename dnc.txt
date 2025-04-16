@@ -1,0 +1,9 @@
+pdfpv2 pip install PyMuPDF pytesseract Pillow numpy opencv-python scikit-learn requests
+
+# First, index the email data
+python index.py index C:\Users\adrop\Downloads\RAG\emails_data
+
+# Then, index the extracted text from PDFs
+python index.py index C:\Users\adrop\Downloads\RAG\extracted_text
+
+streamlit run rag_appv2.py
